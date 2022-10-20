@@ -56,20 +56,24 @@ p {
 .odkazy {
   background-color: #31363b;
   width: 270px;
+  text-align: center;
   padding: 0;
   margin: 0;
 }
 
-a{ 
+a { 
   font-family: Montserrat;
   color: #bdc3c7;
 }
 
+.odkazy li {
+  display: inline-block;
+}
 .portfolio {
-display: flex;
-border-top: 2px solid  #3f464d;
-border-bottom: 2px solid  #3f464d;;
-padding: 15px 50px 15px 60px
+  display: flex;
+  border-top: 2px solid  #3f464d;
+  border-bottom: 2px solid  #3f464d;;
+  padding: 15px 50px 15px 60px
 }
 
 .facebook,
@@ -78,6 +82,7 @@ padding: 15px 50px 15px 60px
 }
 .facebook {
   padding: 15px 15px;
+  text-align: center;
   flex-grow:1;
 }
 
@@ -87,8 +92,10 @@ padding: 15px 50px 15px 60px
 }
 
 .odkazy a {
-text-decoration: none;
-font-weight: bold;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+
 }
 
 .portfolio a:active,
