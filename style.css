@@ -15,77 +15,81 @@ tlačítko twitter          #1da1f2
 */
 
 
-body {
-  background-color: #bdc3c7;
-  width: 270px;
-  height: 600px;
-  margin-top: 20px;
-  margin-left:20px;
-  margin-bottom: 100px;
+.kontejner {
+  display: flex;
+  flex-direction: column;
 }
 
+h1{
+  font-family: 'Montserrat';
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
 
-.foto {
-  width: 270px;
-  height: auto;
-  }
 .logo {
   border-radius: 50%;
   background-color: #b92e81;
 }
 
+.foto {
+  width:270px;
+}
+
+body {
+  margin: 40px;
+  background-color: #bdc3c7;
+}
+
 .obsah {
   background-color: #31363b;
-  font-family: 'Source Sans Pro';
-  font-style: bold;
-  padding: 20px;
+  width:270px;
+  padding: 20px 20px 20px 20px;
+  font-family: Source Sans Pro;
+  
+}
+
+p {
+  color: #bdc3c7;
 }
 
 .odkazy {
   background-color: #31363b;
-  margin: 0;
+  width: 270px;
   padding: 0;
+  margin: 0;
 }
 
-.jmeno{
-  color: white;
-  font-family: 'Montserrat';
-}
-p {color:#bdc3c7} 
-
-.odkazy li {
-  display: inline-block;
-  padding: 15px;
-  margin:0;
-
-}
-
-a {
-  text-decoration: none;
+a{ 
+  font-family: Montserrat;
   color: #bdc3c7;
-  font-family: 'Montserrat';
 }
 
-
-li{
-  border-bottom:2px solid #3f464d;
-  border-top: 2px solid #3f464d;
+.portfolio {
+display: flex;
+border-top: 2px solid  #3f464d;
+border-bottom: 2px solid  #3f464d;;
+padding: 15px 50px 15px 60px
 }
 
-.portfolio a {padding: 15px;
-  text-align: center;
-  box-shadow: black 5px 5px 10px;
-  width:270px;
+.facebook,
+.twitter {
+  display: inline-block;
+}
+.facebook {
+  padding: 15px 15px;
+  flex-grow:1;
 }
 
-.facebook a {padding: 10px;
-text-align: center;
-box-shadow: black 5px 5px 10px;}
+.twitter { 
+  padding: 15px 30px 15px 40px;
+  box-shadow: 4px 4px 10px;
+}
 
-.twitter a {padding: 10px;
-text-align: center;
-box-shadow: black 5px 5px 10px;}
-
+.odkazy a {
+text-decoration: none;
+font-weight: bold;
+}
 
 .portfolio a:active,
 .portfolio a:focus,
@@ -109,7 +113,8 @@ box-shadow: black 5px 5px 10px;}
 }
 
 .logo {
-  position:absolute;
-  bottom: -10%;
-  right: 15%;
+  position: absolute;
+  left: 190px;
+  bottom: -15px;
+
 }
